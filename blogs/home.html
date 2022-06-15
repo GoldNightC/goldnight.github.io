@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>GoldNightC's Website</title>
+<title>Blog Home</title>
 <!-- InstanceEndEditable -->
 <!--Start of favicons-->
 <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-touch-icon.png">
@@ -18,7 +18,7 @@
 <meta name="theme-color" content="#ffffff">
 <!--End of favicons-->
 <!-- InstanceBeginEditable name="stylesheet" -->
-<link href="main.css" rel="stylesheet" type="text/css">
+<link href="../main.css" rel="stylesheet" type="text/css">
 <!-- InstanceEndEditable -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,110 +27,35 @@
 <!-- Edit Head Here -->
 	<style>
 		
-		.request-error-page-content{
-			max-width: 970px;
-			width: 800px;
-			margin: 0 auto;
-			margin-top: 10%;
+		#blogTiles{
+			padding: 20px 50px 20px 50px;
+			background-color: #f0f0f0;
+			display: inline;
+			width: 900px;
 		}
 		
-		.request-error-page-content .default-error-page{
-			overflow: hidden;
-			padding: 0 15px 15px 15px;
-			position: relative;
+		.blogTile{
+			margin-bottom: 50px;
 			background-color: #fff;
-		}
-		
-		.message-container{
+			min-height: 250px;
+			width: 400px;
+			box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 			float: left;
-			width: 45%;
-			margin: 0 auto;
+			margin-right: 50px;
 		}
 		
-		.error-image{
-			height: 300px;
-			float: right;
-			display: block;
-			margin: 20px 0;
-			vertical-align: middle;
-			border: 0;
+		.blogImage{
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 10px;
+			float: left;
 		}
 		
-		.error-message{
-			font-weight: 200;
-    font-size: 16px;
-			line-height: 1.4em;
-			margin: 0 0 12px 0;
-			padding: 5px 0;
-			    display: block;
-    margin-block-start: 1.33em;
-    margin-block-end: 1.33em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+		.blogText p{
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-bottom: 20px;
 		}
-		
-		.error-title{
-			font-weight: 400;
-			font-size: 32px;
-			margin-bottom: 12px;
-			font-weight: bold;
-		}
-		
-		.action-buttons{
-			padding: 18px 0;
-			position: absolute;
-			bottom: 0;
-			display: block;
-		}
-		
-		.btn-primary-md{
-			min-width: 90px;
-			background-color: #393b3d;
-			border-color: #393b3d;
-			color: #f2f4f5;
-			border-radius: 8px;
-			margin-right: 12px;
-			font-weight: 500;
-			    user-select: none;
-    background-color: #02b757;
-    border: 1px solid #02b757;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 500;
-    height: auto;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 9px;
-    font-size: 16px;
-    line-height: 100%;
-    border-radius: 3px;
-		}
-		
-		.btn-control-md{
-			min-width: 90px;
-			background-color: transparent;
-			border-color: #606162;
-			color: rgba(0,0,0,0.6)
-			border-radius: 8px;
-			user-select: none;
-    background-color: #fff;
-    border: 1px solid #b8b8b8;
-    color: #191919;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 500;
-    height: auto;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    padding: 9px;
-    font-size: 16px;
-    line-height: 100%;
-    border-radius: 3px;
-		}
-		
 	</style>
 <!-- InstanceEndEditable -->
 </head>
@@ -139,7 +64,7 @@
 	<div id="header">
 		<div class="left">
 			<div class="top_logo">
-				<a href="home.html">
+				<a href="../home.html">
 					<div class="logo"></div>
 				</a>
 			</div>
@@ -162,19 +87,28 @@
 				<div class="inner">
 					<!-- InstanceBeginEditable name="container" -->
 						<!-- Edit Container Here -->
-						<div class="request-error-page-content">
-    <div class="default-error-page">
-        <div class="message-container">
-            <h3 class="error-title">Page cannot be found or no longer exists</h3>
-            <h4 class="error-message">404 <span>|&nbsp;</span>Page Not found</h4>
-        </div>
-        <img src="images/404image.png" class="error-image " alt="Error Image">
-        <div class="action-buttons">
-            <a class="btn-primary-md btn-min-width" title="Go to the Previous Page" onclick="history.back();return false;" href="#">Back</a>
-            <a class="btn-control-md btn-min-width" title="Return Home" href="https://www.goldnightc.github.io/">Home</a>
-        </div>
-    </div>
-</div>
+						<h1>Blogs Page</h1>
+					<h3>Displays all the blogs published in one page.</h3>
+					<div id="blogTiles">	
+					<a href="../blogs/1.html" class="blogTile">
+						<img src="../images/favicon_android_chrome.png" height="100" width="100" class="blogImage" >
+						
+						<div class="blogText">
+							<p>I finally have released my own website coded by me! This website is just a hobby of mine, but is used to share what my projects are, about my life, and what I do. I also get to post stuff in form of blogs here! </p>
+						</div>
+					</a>
+						
+						
+						<!--- Example Blog
+					<a href="../blogs/home.html" class="blogTile">
+						<img src="../images/placeholder.png" height="100" width="100" class="blogImage" >
+						
+						<div class="blogText">
+							<p>Fruitcake dessert dessert chocolate gingerbread halvah oat cake carrot cake. Lollipop cake macaroon sweet fruitcake chocolate. Wafer icing marshmallow powder wafer chocolate cake apple pie cheesecake. Gummies sweet roll macaroon jujubes donut macaroon sesame snaps jelly-o. Toffee tootsie roll bonbon candy canes marshmallow ice cream jelly-o jujubes gummies. Cheesecake fruitcake shortbread tart sweet marzipan cake. Cake lemon drops shortbread chupa chups jujubes halvah. Icing chocolate bar marzipan danish dessert tiramisu cheesecake caramels cookie. Bonbon chocolate cake chocolate cake brownie powder soufflé bear claw tart.</p>
+						</div>
+					</a>
+					-->
+					</div>
 					<!-- InstanceEndEditable -->
 				</div>
 			</div>
@@ -183,19 +117,19 @@
 	
 	<div class="navigation" style="left: 0px;">
 		<div class="links-box">
-			<a href="home.html">
+			<a href="../home.html">
 				<div class="navigation-link">
 					<span class="navigation-title">Home</span>
 		        </div>
 			</a>
 			
-			<a href="projects.html">
+			<a href="../projects.html">
 				<div class="navigation-link">
 					<span class="navigation-title">Projects</span>
 		        </div>
 			</a>
 			
-			<a href="about-me.html">
+			<a href="../about-me.html">
 				<div class="navigation-link">
 					<span class="navigation-title">About Me</span>
 		        </div>
@@ -208,19 +142,19 @@
 		<div id="leftFooter">
 			<div class="bottomLinks">
 				<div class="footer_link" title="Home">
-					<a href="home.html">Home</a>
+					<a href="../home.html">Home</a>
 				</div>
 				
 				<div class="footer_link" title="Projects">
-					<a href="projects.html">Projects</a>
+					<a href="../projects.html">Projects</a>
 				</div>
 				
 				<div class="footer_link" title="About Me">
-					<a href="about-me.html">About Me</a>
+					<a href="../about-me.html">About Me</a>
 				</div>
 				
 				<div class="footer_link" title="Contact">
-					<a href="contact.html">Contact</a>
+					<a href="../contact.html">Contact</a>
 
 				</div>
 				
@@ -230,10 +164,10 @@
 				
 				<div class="footer_link" title="Click me!" style="margin-left: 40px;">
 					<!-- InstanceBeginEditable name="amogus" -->
-					<button id="btn" onclick="audio.play();" style="background-color: transparent; border: none;"><img src="images/sus.png" width="3"></button>
+					<button id="btn" onclick="audio.play();" style="background-color: transparent; border: none;"><img src="../images/sus.png" width="3"></button>
 					<script type="text/javascript">
 						const audio = new Audio();
-						audio.src = "./sounds/amogus.mp3";
+						audio.src = "../sounds/amogus.mp3";
 					</script>
 										<!-- InstanceEndEditable -->
 				</div>
@@ -241,7 +175,7 @@
 		</div>
 		
 		<div id="rightFooter">
-			<a href="home.html" style="border: none;">
+			<a href="../home.html" style="border: none;">
 				<img class="logo">
 			</a>
 		</div>
